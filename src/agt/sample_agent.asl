@@ -1,0 +1,13 @@
+// Objetivo inicial del agente.
+
+!start.
+
+// Saluda y guarda la fecha y la hora de inicio como una creencia.
+
++!start : true
+    <- .print("hello world.");
+       .date(Y,M,D); .time(H,Min,Sec,MilSec);
+       +started(Y,M,D,H,Min,Sec).
+
+{ include("$jacamo/templates/common-cartago.asl") }
+{ include("$jacamo/templates/common-moise.asl") }

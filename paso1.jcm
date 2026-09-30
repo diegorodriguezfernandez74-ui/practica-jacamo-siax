@@ -1,0 +1,5 @@
+// Paso 1: Alice envia un mensaje a Bob.
+mas paso1 {
+    agent alice: alice_mensajes.asl
+    agent bob: bob_mensajes.asl
+}

@@ -1,0 +1,13 @@
+// Paso 2: ambos agentes observan y modifican el mismo artefacto.
+mas paso2 {
+    agent alice: alice_contador.asl {
+        focus: w.c1
+    }
+    agent bob: bob_contador.asl {
+        focus: w.c1
+    }
+
+    workspace w {
+        artifact c1: example.Counter(3)
+    }
+}

@@ -1,0 +1,7 @@
+// Dependencias de los paquetes declarados en los archivos .jcm.
+
+apply plugin: 'java'
+
+dependencies {
+    
+}

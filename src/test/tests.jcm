@@ -1,0 +1,21 @@
+// Agentes y rutas necesarios para ejecutar las pruebas.
+
+
+mas unit_tests {
+
+    agent test_manager {
+          beliefs: shutdown_delay(30)
+    }
+
+    // La autodeteccion de Jason 3.3.0 busca '/' en las rutas.
+    // Declarar el tester evita el fallo con separadores de Windows.
+    agent test_sample: test-sample.asl
+
+    asl-path: "."
+              "src/agt"
+              "src/agt/inc"
+              "src/test/agt"
+              "src/test/inc"
+              "$jacamo/test/jacamo/inc"
+              "$jason/test/jason/inc"
+}
